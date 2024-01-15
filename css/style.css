@@ -27,6 +27,11 @@
     /* column-gap: 10px;
     row-gap: 10px; */
     gap: 10px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer-left footer-left footer-right"
+    ;
 }
 
 header {
@@ -34,21 +39,25 @@ header {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1; */
-    grid-column: 1 / span 3;
-    grid-row: 1;
+    /* grid-column: 1 / span 3;
+    grid-row: 1; */
+    grid-area: header;
 }
 
 .main {
-    grid-column: 1 / span 3;
-    grid-row: 2;
+    /* grid-column: 1 / span 3;
+    grid-row: 2; */
+    grid-area: main;
 }
 
 .footer-left {
-    grid-column: 1 / span 2;
-    grid-row: 5;
+    /* grid-column: 1 / span 2;
+    grid-row: 5; */
+    grid-area: footer-left;
 }
 
 .footer-right {
-    grid-column: 3;
-    grid-row: 5;
+    /* grid-column: 3;
+    grid-row: 5; */
+    grid-area: footer-right;
 }
