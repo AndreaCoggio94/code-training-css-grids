@@ -48,12 +48,22 @@ header {
     /* grid-column: 1 / span 3;
     grid-row: 2; */
     grid-area: main;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.item-subgrid {
+    background-color: rgb(109, 151, 151);
+    grid-column: 2 / span 1;
 }
 
 .footer-left {
     /* grid-column: 1 / span 2;
     grid-row: 5; */
     grid-area: footer-left;
+    
 }
 
 .footer-right {
